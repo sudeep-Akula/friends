@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+     <title>Friends</title>
+   
     <h3 id="date" style="color: snow;"></h3>
 <button onclick="show()">click to know Date & Time</button>
 <script>
@@ -91,6 +93,13 @@
                     pi = "dooropen.png"
                 }
                 document.getElementById('door').src=pi;
+            }
+        </script>
+        <p id="intro" style="color: snow;">welcome to java</p>
+        <button onclick="intr()">click me</button>
+        <script>
+            function intr(){
+                document.getElementById("intro").innerHTML="welcome to html"
             }
         </script>
 
