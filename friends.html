@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
+    <h3 id="date" style="color: snow;"></h3>
+<button onclick="show()">click to know Date & Time</button>
+<script>
+    function show(){
+        document.getElementById("date").innerHTML=Date();
+    }
+</script>
 </head>
+
 <body style="background-color:rgb(0, 0, 0)";>
     <p style="font-size: 50px; color: beige;" align=center><u><i>Just for Fun</i></u></p>
     <h1 style="color: orange;"><i>my Friends</i> </h1>
@@ -58,6 +66,32 @@
     <p style="color: azure; font-size: 30px;">to watch chal mohan ranga click on <a href="https://drive.google.com/file/d/1tzOiZY4786OVbFy-SMvQ9nwDs-TEltMv/view?usp=sharing">watch chal mohan ranga </a></p>  
 
     <p style="color: rgb(255, 255, 255); font-size:30px">To see the details about tables <a href="1-09-20.html"><img src="click.png" width="70px" height="45px"></img></a> </p>
+    <pre>
+         
+         
+         
+         
+         
+         
+         
+    </pre>
+
+        <img src="doorclosed.png" id="door" height="400px" width="250px">
+        <p>
+            <button onclick="door(0)">Close Door</button>
+            <button onclick="door(1)">Open Door</button>
+        </p>
+        <script>
+            function door(s){
+                var pi;
+                if(s == 0){
+                    pi="doorclosed.png"
+                } else{
+                    pi = "dooropen.png"
+                }
+                document.getElementById('door').src=pi;
+            }
+        </script>
 
 </body>
 </html>
